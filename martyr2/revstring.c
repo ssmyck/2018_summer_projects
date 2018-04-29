@@ -1,8 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 
-char string[];
+char string[100];
 
-void main(argc, argv)
+int main(int argc, char** argv)
 {
-    printf("Hello World!");
+    char* character = argv[1];
+
+    printf("You entered in %d words!\n", (argc-1));
+
+    printf("Char 1 is %s\n", character);
+
+    //string[argv] = argv;
 }
